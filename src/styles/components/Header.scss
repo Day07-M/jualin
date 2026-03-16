@@ -1,0 +1,8 @@
+@use '../color';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: color.$accent;
+  color: color.$white;
+}
