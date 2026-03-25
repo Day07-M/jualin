@@ -1,20 +1,17 @@
 import { Link } from 'react-router-dom';
-import '../styles/components/Header.scss';
 
-function Header() {
+import user_icon from '../assets/svg/user.svg';
+
+export default function Header() {
   return (
-    <header>
-      <div className="logo">
+    <header className='flex justify-between p-3 bg-indigo-500 text-white font-medium'>
+      <Link to="/" className="logo-container">
         <div>Jualin</div>
-      </div>
-      <Link to="/profile" className="">
-        <div className="profile">
-          <img src='@/assets/react.svg' alt='user image' />
-          <p>User</p>
-        </div>
       </Link>
+      <div className="flex">
+        <img src={user_icon} alt='user image' />
+        <p>User</p>
+      </div>
     </header>
   );
 }
-
-export default Header;

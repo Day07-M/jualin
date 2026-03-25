@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+button {
+  @apply cursor-pointer;
+}
+
+form {
+  @apply flex flex-col gap-2;
+}
+
+form button {
+  @apply p-1 border-2 cursor-pointer;
+}
+
+input {
+  @apply p-1 border-2 border-solid rounded;
+}
+
+table {
+  @apply border-2 rounded-xl border-separate border-spacing-0;
+}
+
+th, td {
+  @apply p-5;
+}
+
+th {
+  @apply bg-indigo-600 text-white;
+}
+
+.btn-primary {
+  @apply flex p-3 font-medium items-center bg-indigo-600 text-white rounded-full;
+}
+
+.btn-primary img {
+  @apply w-10 h-auto;
+}
+
+.nav-link {
+  @apply bg-indigo-600 p-6 text-white rounded hover:bg-indigo-700;
+}

@@ -2,8 +2,6 @@ import { authClient } from '../../lib/auth-client';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../styles/pages/auth/SignUp.scss';
-
 export default function SignUp() {
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");

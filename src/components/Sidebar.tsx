@@ -1,21 +1,16 @@
 import { Link } from 'react-router-dom';
 
-import '../styles/components/Sidebar.scss';
-
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <nav>
-        <ul>
-          <li><Link to="/">Beranda</Link></li>
-          <li><Link to="/calendar">Kalender</Link></li>
-          <li><Link to="/tasks">Task</Link></li>
-          <li><Link to="/reports">Laporan</Link></li>
-          <li><Link to="/payments">Pembayaran</Link></li>
-          <li><Link to="/settings">Pengaturan</Link></li>
-        </ul>
+    <aside className="flex h-full bg-indigo-500">
+      <nav className="flex flex-col">
+        <Link to="/" className="nav-link">Beranda</Link>
+        <Link to="/order" className="nav-link">Pesan</Link>
+        <Link to="/payments" className="nav-link">Pembayaran</Link>
+        <Link to="/inventory" className="nav-link">Inventori</Link>
+        <Link to="/settings" className="nav-link">Pengaturan</Link>
       </nav>
-    </div>
+    </aside>
   );
 }
 
